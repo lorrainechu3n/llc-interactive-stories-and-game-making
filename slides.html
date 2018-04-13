@@ -59,12 +59,11 @@
       </h1>
 
       <!-- FILL IN INSTRUCTOR DETAILS -->
-      <img class="instructor" src="http://placehold.it/225x225" alt="Instructor Name">
-      <h2><span class="cursive">with</span> Instructor name</h2>
+      <img class="instructor" src="https://www.canadalearningcode.ca/wp-content/uploads/2016/08/rixaheadshot-1-400x320.jpg" alt="Instructor Name">
+      <h2><span class="cursive">with</span> Rixa Bugelli</h2>
       <ul>
         <li><a href="mailto:">hello@email.com</a></li>
-        <li><a href="http://website.com">website.com</a></li>
-        <li><a href="http://twitter.com/">@twitter</a></li>
+        <li><a href="http://twitter.com/">@rixajoy</a></li>
       </ul>
 
       <div class="sponsor">
@@ -238,7 +237,7 @@
         * paid and free options include features such as colour highlighting and plugins for improving workflow
         * some great options: [Notepad++](http://notepad-plus-plus.org/), [Sublime Text](http://www.sublimetext.com/) (untimed free trial), [Brackets](http://brackets.io) and [TextWrangler](http://www.barebones.com/products/textwrangler/).
 
-        **[Atom](https://atom.io/)** is totally free and is the editor we'll be using today.
+        **[Thimble](https://thimble.mozilla.org/)** is totally free and is the online editor we'll be using today - it's great for beginners!
         <span class="note">(If you have another editor installed, it will work as well but some features may be different.)</span>
 
         ---
@@ -249,7 +248,7 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Getting to know Atom
+        #Getting to know Atom (skip this slide)
 
         Having a good text editor and learning how to use it to its full potential will help your work flow. Today, let's update the text wrapping option to make it easier to read long blocks of code and text.
 
@@ -393,7 +392,7 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-      #Setting up your project
+      #Setting up your project (Skip - not on atom)
 
       Inside of the folder you downloaded today, open the **project** folder in your text editor to edit your project.
 
@@ -420,7 +419,7 @@
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Setting up your project
+        #Setting up your project (Skip - not on atom)
 
         Your project folder structure will look like this:
 
@@ -443,19 +442,15 @@
       <script type="text/template">
         #Class Exercise #1: Create your project's start page (5 min)
 
-        1. In the text editor, create a new file (**File** > **New File**)
-        1. Save it as `start.html` (**File** > **Save**)
+        1. On Thimble, create a new project (top right corner > New Project)
+        1. Start working out of the `index.html` file
+        1. Delete the generic Thimble text (e.g. "Welcome to Thimble")
         1. Add all of the basic HTML tags. Refer to [this slide](slides.html#basic-tags) for reference.
         1. In *between* the `<title></title>` tags, add a *page title* that reflects the content of your webpage. Example:
           ```
           <title>Choose Your Own Adventure</title>
           ```
-        1. Open `start.html` in the browser.
-          * go to Windows Explorer or Finder
-          * navigate to the **llc-interactive-stories-and-game-making > project** folder
-          * double click on **start.html** to open it in your default browser
-          <br><span class="note">(If Chrome is not your default, right-click/two-finger tap on **start.html** and choose **Open With > Chrome**)</span>
-
+        1. Hit publish, and click on the shareable link. It should open in a new tab.
         There is no page *content* yet so the browser will show a blank page. The page *title* however, will show in the browser toolbar.
 
         ![exercise 1 example](framework/img/exercise-01-example.png)
@@ -615,7 +610,7 @@
       <script type="text/template">
         #Class Exercise #2: Page structure (5 minutes)
 
-        Back in the text editor, let's add the HTML5 structural tags to set up the page layout.
+        Back to the Thimble text editor, let's add the HTML5 structural tags to set up the page layout.
         Only add the structural HTML blocks in this step, no content just yet.
 
         We will need these tags: one `<header>`, one `<section>` and a `<footer>`
@@ -777,14 +772,14 @@
       <script type="text/template">
         #Image file paths
 
-        It's best practice (but not required) to put image files into their own folder to keep the project files organized.  Today's **project** directory already includes an **images** folder.
+        It's best practice (but not required) to put image files into their own folder to keep the project files organized.  In your project workspace on Thimble, right click and create a <strong>New Folder</strong> titled "images".
 
-        Since the images are not in the same folder as **start.html**, use a *relative* path to link to the file.
+        Since the images are not in the same folder as **index.html**, use a *relative* path to link to the file.
 
         ```
         <img src="images/image-file.jpg">
         ```
-        The starting point (**start.html**), is outside of the **images** folder. The above example directs the browser to a folder named **images**, then the filename, *including the file extension*.
+        The starting point (**index.html**), is outside of the **images** folder. The above example directs the browser to a folder named **images**, then the filename, *including the file extension*.
       </script>
     </section>
 
@@ -830,8 +825,8 @@
         #Exercise #4: Add links and images (15mins)
 
         1. Add a home page image (remember `alt` text!)
-        1. Create a second .html file in your **project** folder. You can copy and paste the structure from the first one or 'duplicate' it. Rename it something *other than* start.html
-        1. Create a link from your `start.html` to your new .html file
+        1. Create a second .html file in your **project** folder. You can copy and paste the structure from the first one or 'duplicate' it. Rename it something *other than* index.html
+        1. Create a link from your `index.html` to your new .html file
 
       </script>
     </section>
@@ -948,12 +943,12 @@ selector { /* select the heading */
       <script type="text/template">
         #Class Exercise: Create your project's CSS File
 
-        1. In the text editor, create a new CSS file by selecting **File > New File**.
-        1. Name it **styles.css** and save it in the root folder (same level as your **start.html** file).
-        1. Then, reference it in **start.html** and the second html file you just created. <span class="note">**Pro tip!** Type `link` and press tab!</span>
+        1. In the Thimble text editor, there should already be a style.css file for your project.
+        1. Delete all the sample code that comes with Thimble.
+        1. Then, reference it in **index.html** and the second html file you just created. <span class="note">**Pro tip!** Type `link` and press tab!</span>
           ```
           <head>
-              <link rel="stylesheet" href="styles.css">
+              <link rel="stylesheet" href="style.css">
           </head>
           ```
         1. Run a test by adding a background color to the viewport (`body`).
@@ -1443,10 +1438,14 @@ margin: 0px;</textarea>
       </script>
     </section>
 
-    <section class="slide title" data-markdown data-toc>
+    <section class="slide" data-markdown>
       <script type="text/template">
-        #Game Jam Time!
-        ##get creative, have fun, work together!
+        #Game Jam Time! Get creative, have fun, work together!
+        Build from scratch, or remix one of our example games!
+        <ul>
+          <li>Remix our quiz: <a href="bit.ly/LLCgame01">bit.ly/LLCgame01</a></li>
+          <li>Remix our mystery game: <a href="bit.ly/LLCgame02">bit.ly/LLCgame02</a></li>
+        </ul>
       </script>
     </section>
 
@@ -1461,7 +1460,7 @@ margin: 0px;</textarea>
       <script type="text/template">
         #Some more Advanced CSS
 
-        If you've already created your text-based adventure game or quiz, challenge yourself to create a carnival game similar to the [action game](project/reference/game03-action/start.html) included in the reference folder.
+        If you've already created your text-based adventure game or quiz, challenge yourself to create a carnival game similar to our example action game at: <a href="http://bit.ly/LLCgame03">bit.ly/LLCgame03</a>
 
         If you get stuck, flag down a mentor for help or work with a partner.
 
@@ -1481,9 +1480,7 @@ margin: 0px;</textarea>
       <script type="text/template">
         #CREATE THE ACTION GAME
 
-        Since this is a more advanced project, it is recommended that you **duplicate** the entire `game03-action` folder from inside the reference folder and modify the existing files we provide for you.
-
-        <img src="framework/img/duplicate.gif" alt="duplicate the project folder">
+        Since this is a more advanced project, it is recommended that you **remix** the existing entire <strong>bit.ly/LLCgame03</strong> project from inside the reference folder and modify the existing files we provide for you.
 
         Looking through a completed project and modifying it until it's your own is a great way to learn advanced topics.
 
